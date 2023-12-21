@@ -1,0 +1,16 @@
+teacher     
+-------
+id integer PK
+created_at timestamp
+updated_at timestamp
+name varchar(32)
+module varchar(3) NULL
+
+student     
+-------
+id integer PK
+teacher_id integer FK >- teacher.id
+created_at timestamp
+updated_at timestamp
+name varchar(32)
+level varchar(1)

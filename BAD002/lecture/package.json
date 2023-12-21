@@ -2,12 +2,12 @@
   "name": "BAD",
   "version": "1.0.0",
   "main": "index.js",
+  "license": "MIT",
   "scripts": {
     "start": "ts-node main.ts",
     "dev": "ts-node-dev main.ts",
     "test": "jest --watch"
   },
-  "license": "MIT",
   "devDependencies": {
     "@types/jest": "^29.5.11",
     "@types/node": "^20.10.5",
