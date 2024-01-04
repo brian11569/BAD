@@ -4,6 +4,7 @@
       // set "esModuleInterop: true" for importing commonjs library
       // import * as express from 'express'
       // import express from 'express'
-      "esModuleInterop": true
+      "esModuleInterop": true,
+      "target": "ES6"
     }
   }

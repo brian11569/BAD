@@ -1,0 +1,50 @@
+product
+----
+id
+name varchar(50)
+price
+category_id fk
+
+category
+----
+id
+name varchar(32) unique
+
+shopping_cart
+-------------
+id
+user_id fk
+product_id fk
+quantity
+
+user
+----
+id
+username varchar(32) unique
+
+order
+-----
+id
+user_id fk
+submit_time timestamp
+confirm_time timestamp null
+shipment_time timestamp null
+total_price
+
+order_part
+----------
+id
+order_id fk
+product_id fk
+quantity
+unit_price
+
+
+# product (487, 457)
+# category (203, 605)
+# view: (1, 0)
+# zoom: 1.000
+# shopping_cart (833, 288)
+# user (571, 122)
+# order (171, 25)
+# order_part (151, 301)

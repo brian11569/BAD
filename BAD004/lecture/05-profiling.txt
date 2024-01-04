@@ -1,0 +1,19 @@
+explain analyze
+select id from student
+where level > 10
+;
+
+explain
+select id from student
+where name = 'alice'
+;
+
+explain analyze
+select id from student
+where name = 'alice'
+;
+
+explain
+select name, level from student
+where id = 1
+;

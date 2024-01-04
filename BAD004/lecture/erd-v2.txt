@@ -1,0 +1,35 @@
+product
+----
+id
+name
+price
+category_id fk
+
+category
+----
+id
+name unique
+
+shopping_cart
+-------------
+id
+user_id fk
+product_id fk
+quantity
+
+user
+----
+id
+username
+
+order
+-----
+id
+user_id fk
+product_id fk
+submit_time
+confirm_time null
+shipment_time null
+quantity
+unit_price
+total_price

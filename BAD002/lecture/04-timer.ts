@@ -21,7 +21,7 @@ export function getOnlineUserCount(): number {
 
 export function resetOnlineUserCount() {
   for (let timer of onlineUsers.values()) {
-    clearTimeout(timer)
+    clearTimeout(timer as NodeJS.Timeout)
   }
   onlineUsers.clear()
 }

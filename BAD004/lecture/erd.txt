@@ -1,0 +1,12 @@
+teacher
+-------
+id
+name
+subject
+
+student
+-------
+id
+name
+level
+teacher_id null
